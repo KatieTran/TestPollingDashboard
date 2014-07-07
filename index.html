@@ -1,343 +1,301 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie ie6 lt-ie10 lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie ie7 lt-ie10 lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie ie8 lt-ie10 lt-ie9" lang="en"> <![endif]-->
+<!--[if IE 9]>    <html class="no-js ie ie9 lt-ie10" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Testpollingdashboard : Build a simple static polling web site that allows users to take a survey.  Design a compelling, interactive front-end which asks the users to answer a series of questions, displaying the aggregate results of all polls at the end. " />
-
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>Testpollingdashboard</title>
-  </head>
-
-  <body>
-
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/KatieTran/TestPollingDashboard">View on GitHub</a>
-
-          <h1 id="project_title">Testpollingdashboard</h1>
-          <h2 id="project_tagline">Build a simple static polling web site that allows users to take a survey.  Design a compelling, interactive front-end which asks the users to answer a series of questions, displaying the aggregate results of all polls at the end. </h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/KatieTran/TestPollingDashboard/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/KatieTran/TestPollingDashboard/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <p>&lt;!doctype html&gt;</p>
-
-
-
-
-
-
-
-
-
-
-
-<p></p>
-
-
-
-<p></p>
-    Customer Satisfaction Survey<div>
-        <div>
-            
-            <a href="/">Dung Tran</a>
+<head>
+    <meta charset="UTF-8">
+    <title>Customer Satisfaction Survey</title>
+    <link rel="shortcut icon" href="">
+    <meta name="description" content="Customer Satisfaction Survey">
+    <meta name="robots" content="all">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootswatch/3.1.0/flatly/bootstrap.min.css">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="navbar navbar-default navbar-static-top">
+    	<div class="navbar-header">
+        	<button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+            <a href="/" class="navbar-brand">Dung Tran</a>
         </div>
-        <div>
-            <ul>
-<li><a href="index.html"><i></i> Survey</a></li>
-                <li><a href="dashboard.html"><i></i> Dashboard</a></li>
+        <div class="navbar-collapse collapse">
+        	<ul class="nav navbar-nav">
+            	<li class="active"><a href="index.html"><i class="fa fa-list-alt"></i><span> Survey</span></a></li>
+                <li><a href="dashboard.html"><i class="fa fa-dashboard"></i><span> Dashboard</span></a></li>
             </ul>
-</div>
+        </div>
     </div>
-    <div>
-        <div>
-            <div>
-                <h1>
-<a name="customer-satisfaction-survey" class="anchor" href="#customer-satisfaction-survey"><span class="octicon octicon-link"></span></a>Customer Satisfaction Survey</h1>
+	<div class="container">
+    	<div class="row">
+            <div class="col-md-12">
+            	<h1>Customer Satisfaction Survey</h1>
                 <p>Please take a few moments to complete this satisfaction survey. </p>
-                
+                <form id="form" class="form-horizontal" method="post" enctype="multipart/form-data" autocomplete="off" accept-charset="UTF-8" name="form">
                     <ul>
-<li>
-                            <p>1. Overall, how satisfied were you with the product / service?</p>
-                            <div>
-                                <div>
-                                
-                                    
+                        <li class="panel panel-info">
+                            <p class="panel-heading">1. Overall, how satisfied were you with the product / service?</p>
+                            <div class="panel-body">
+                                <div class="radio">
+                                <label>
+                                    <input type="radio" checked="" value="" name="optionsRadios">
                                     Very Satisfied
-                                
+                                </label>
                                 </div>
-                                <div>
-                                
-                                    
+                                <div class="radio">
+                                <label>
+                                    <input type="radio" checked="" value="" name="optionsRadios">
                                     Satisfied
-                                
+                                </label>
                                 </div>
-                                <div>
-                                
-                                    
+                                <div class="radio">
+                                <label>
+                                    <input type="radio" checked="" value="" name="optionsRadios">
                                     Neutral
-                                
+                                </label>
                                 </div>
-                                <div>
-                                
-                                    
+                                <div class="radio">
+                                <label>
+                                    <input type="radio" checked="" value="" name="optionsRadios">
                                     Unsatisfied
-                                
+                                </label>
                                 </div>
-                                <div>
-                                
-                                    
+                                <div class="radio">
+                                <label>
+                                    <input type="radio" checked="" value="" name="optionsRadios">
                                      Very Unsatisfied 
-                                
+                                </label>
                                 </div>
-                                <div>
-                                
-                                    
+                                <div class="radio">
+                                <label>
+                                    <input type="radio" checked="" value="" name="optionsRadios">
                                      N/A
-                                
+                                </label>
                                 </div>
                             </div>
                         </li>
-                        <li>
-                            <p>2. Would you recommend our product / service to colleagues or contacts within your industry?</p>
-                            <div>
-                                <div>
-                                
-                                    
-                                    Definitely
+                        <li class="panel panel-info">
+                            <p class="panel-heading">2. Would you recommend our product / service to colleagues or contacts within your industry?</p>
+                            <div class="panel-body">
+                                <div class="radio">
+                                <label>
+                                    <input type="radio" checked="" value="" name="optionsRadios">
+                                    Definitely</label>
                                 </div>
-                                <div>
-                                
-                                    
-                                    Probably
+                                <div class="radio">
+                                <label>
+                                    <input type="radio" checked="" value="" name="optionsRadios">
+                                    Probably</label>
                                 </div>
-                                <div>
-                                
-                                    
-                                    Not Sure
+                                <div class="radio">
+                                <label>
+                                    <input type="radio" checked="" value="" name="optionsRadios">
+                                    Not Sure</label>
                                 </div>
-                                <div>
-                                
-                                    
-                                    Probably Not
+                                <div class="radio">
+                                <label>
+                                    <input type="radio" checked="" value="" name="optionsRadios">
+                                    Probably Not</label>
                                 </div>
-                                <div>
-                                
-                                    
-                                    Definitely Not
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <p> 3. Would you use our product / service in the future?</p>
-                            <div>
-                                <div>
-                                
-                                    
-                                    Definitely
-                                </div>
-                                <div>
-                                
-                                    
-                                    Probably
-                                </div>
-                                <div>
-                                
-                                    
-                                    Not Sure
-                                </div>
-                                <div>
-                                
-                                    
-                                    Probably Not
-                                </div>
-                                <div>
-                                
-                                    
-                                    Definitely Not
+                                <div class="radio">
+                                <label>
+                                    <input type="radio" checked="" value="" name="optionsRadios">
+                                    Definitely Not</label>
                                 </div>
                             </div>
                         </li>
-                        <li>
-                            <p> 4. How long have you used our product / service? </p>
-                            <div>
-                                <div>
-                                
-                                    
+                        <li class="panel panel-info">
+                            <p class="panel-heading"> 3. Would you use our product / service in the future?</p>
+                            <div class="panel-body">
+                                <div class="radio">
+                                <label>
+                                    <input type="radio" checked="" value="" name="optionsRadios">
+                                    Definitely</label>
+                                </div>
+                                <div class="radio">
+                                <label>
+                                    <input type="radio" checked="" value="" name="optionsRadios">
+                                    Probably</label>
+                                </div>
+                                <div class="radio">
+                                <label>
+                                    <input type="radio" checked="" value="" name="optionsRadios">
+                                    Not Sure</label>
+                                </div>
+                                <div class="radio">
+                                <label>
+                                    <input type="radio" checked="" value="" name="optionsRadios">
+                                    Probably Not</label>
+                                </div>
+                                <div class="radio">
+                                <label>
+                                    <input type="radio" checked="" value="" name="optionsRadios">
+                                    Definitely Not</label>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="panel panel-info">
+                            <p class="panel-heading"> 4. How long have you used our product / service? </p>
+                            <div class="panel-body">
+                                <div class="radio">
+                                <label>
+                                    <input type="radio" checked="" value="" name="optionsRadios">
                                      Less than a month
-                                
+                                </label>
                                 </div>
-                                <div>
-                                
-                                    
+                                <div class="radio">
+                                <label>
+                                    <input type="radio" checked="" value="" name="optionsRadios">
                                     1-6 months
-                                
+                                </label>
                                 </div>
-                                <div>
-                                
-                                    
+                                <div class="radio">
+                                <label>
+                                    <input type="radio" checked="" value="" name="optionsRadios">
                                     1-3 years
-                                
+                                </label>
                                 </div>
-                                <div>
-                                
-                                    
+                                <div class="radio">
+                                <label>
+                                    <input type="radio" checked="" value="" name="optionsRadios">
                                      Over 3 Years
-                                
+                                </label>
                                 </div>
-                                <div>
-                                
-                                    
+                                <div class="radio">
+                                <label>
+                                    <input type="radio" checked="" value="" name="optionsRadios">
                                      Never used 
-                                
+                                </label>
                                 </div>
                             </div>
                         </li>
-                        <li>
-                            <p>5. How often do you use product / service?</p>
-                            <div>
-                                <div>
-                                
-                                    
+                        <li class="panel panel-info">
+                            <p class="panel-heading">5. How often do you use product / service?</p>
+                            <div class="panel-body">
+                                <div class="radio">
+                                <label>
+                                    <input type="radio" checked="" value="" name="optionsRadios">
                                     Once a week
-                                
+                                </label>
                                 </div>
-                                <div>
-                                
-                                    
+                                <div class="radio">
+                                <label>
+                                    <input type="radio" checked="" value="" name="optionsRadios">
                                      2 to 3 times a month
-                                
+                                </label>
                                 </div>
-                                <div>
-                                
-                                    
+                                <div class="radio">
+                                <label>
+                                    <input type="radio" checked="" value="" name="optionsRadios">
                                     Once a month
-                                
+                                </label>
                                 </div>
-                                <div>
-                                
-                                    
+                                <div class="radio">
+                                <label>
+                                    <input type="radio" checked="" value="" name="optionsRadios">
                                       Less than once a month
-                                
+                                </label>
                                 </div>
                             </div>
                         </li>
-                        <li>
-                            <p> 6. What aspect of the product / service were you most satisfied by? </p>
-                            <div>
-                                <div>
-                                
-                                    
+                        <li class="panel panel-info">
+                            <p class="panel-heading"> 6. What aspect of the product / service were you most satisfied by? </p>
+                            <div class="panel-body">
+                                <div class="radio">
+                                <label>
+                                    <input type="radio" checked="" value="" name="optionsRadios">
                                      Quality
-                                
+                                </label>
                                 </div>
-                                <div>
-                                
-                                    
+                                <div class="radio">
+                                <label>
+                                    <input type="radio" checked="" value="" name="optionsRadios">
                                     Price
-                                
+                                </label>
                                 </div>
-                                <div>
-                                
-                                    
+                                <div class="radio">
+                                <label>
+                                    <input type="radio" checked="" value="" name="optionsRadios">
                                      Purchase Experience
-                                
+                                </label>
                                 </div>
-                                <div>
-                                
-                                    
+                                <div class="radio">
+                                <label>
+                                    <input type="radio" checked="" value="" name="optionsRadios">
                                       Installation or First Use Experience
-                                
+                                </label>
                                 </div>
-                                <div>
-                                
-                                    
+                                <div class="radio">
+                                <label>
+                                    <input type="radio" checked="" value="" name="optionsRadios">
                                       Usage Experience
-                                
+                                </label>
                                 </div>
                             </div>
                         </li>
-                        <li>
-                            <p> 7. What aspect of the product / service were you most disappointed by?</p>
-                            <div>
-                                <div>
-                                
-                                    
+                        <li class="panel panel-info">
+                            <p class="panel-heading"> 7. What aspect of the product / service were you most disappointed by?</p>
+                            <div class="panel-body">
+                                <div class="radio">
+                                <label>
+                                    <input type="radio" checked="" value="" name="optionsRadios">
                                      Quality
-                                
+                                </label>
                                 </div>
-                                <div>
-                                
-                                    
+                                <div class="radio">
+                                <label>
+                                    <input type="radio" checked="" value="" name="optionsRadios">
                                     Price
-                                
+                                </label>
                                 </div>
-                                <div>
-                                
-                                    
+                                <div class="radio">
+                                <label>
+                                    <input type="radio" checked="" value="" name="optionsRadios">
                                      Purchase Experience
-                                
+                                </label>
                                 </div>
-                                <div>
-                                
-                                    
+                                <div class="radio">
+                                <label>
+                                    <input type="radio" checked="" value="" name="optionsRadios">
                                       Installation or First Use Experience
-                                
+                                </label>
                                 </div>
-                                <div>
-                                
-                                    
+                                <div class="radio">
+                                <label>
+                                    <input type="radio" checked="" value="" name="optionsRadios">
                                       Usage Experience
-                                
+                                </label>
                                 </div>
                             </div>
                         </li>
-                        <li>
-                            <p> 8. What do you like about the product / service? </p>
-                            <div>
-                                </div>
+                        <li class="panel panel-info">
+                            <p class="panel-heading"> 8. What do you like about the product / service? </p>
+                            <div class="panel-body">
+                            	<textarea id="textArea" rows="10" class="form-control"></textarea>
+                            </div>
                         </li>
                     </ul>
-<div>
-                        <i></i> Reset
-                        <i></i> Submit
+                    <div class="btn-group pull-right">
+                        <button class="btn btn-default" type="reset"><i class="fa fa-refresh"></i> Reset</button>
+                    	<button class="btn btn-primary" type="submit"><i class="fa fa-check"></i> Submit</button>
                     </div>
-                
-  <div>
-                    <ul>
-<li><a href="#">«</a></li>
-                      <li><a href="#">1 (current)</a></li>
+                </form>
+  <div class="center-block text-center">
+                    <ul class="pagination">
+                      <li class="disabled"><a href="#">«</a></li>
+                      <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
                       <li><a href="#">2</a></li>
                       <li><a href="#">»</a></li>
-                    </ul>
-<br>
-</div>
+                    </ul>                             	
+                </div>
             </div>
         </div>
-    </div>
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Testpollingdashboard maintained by <a href="https://github.com/KatieTran">KatieTran</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
-    
-
-  </body>
+ 	</div>
+</body>
 </html>
